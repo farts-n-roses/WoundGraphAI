@@ -96,11 +96,22 @@ The framework follows a multi-stage pipeline:
 
 ```text
 WoundGraphAI/
-
 │
 ├── app.py
 ├── requirements.txt
 ├── README.md
+├── config.py
+│
+├── dataset/
+│   ├── masks/
+│   │   ├── test_masks/
+│   │   └── train_masks/
+│   ├── precomputed/
+│   ├── raw_images/
+│   │   ├── test_images/
+│   │   └── train_images/
+│   ├── simulated_sequences/
+│   └── metadata.csv
 │
 ├── pages/
 │   ├── 1_Overview.py
@@ -112,40 +123,23 @@ WoundGraphAI/
 │   └── 7_Insights.py
 │
 ├── models/
-│   ├── stgnn_model.py
-│   ├── graph_layers.py
-│   └── prediction_head.py
+│   ├── explainability.py
+│   ├── healing_predictor.py
+│   ├── segmentation_model.py
+│   └── temporal_gnn.py
 │
-├── preprocessing/
-│   ├── image_preprocessing.py
-│   ├── segmentation.py
-│   └── feature_extraction.py
+├── processing/
+│   ├── feature_extractor.py
+│   ├── graph_builder.py
+│   ├── metrics.py
+│   ├── preprocess.py
+│   └── temporal_simulator.py
 │
-├── simulation/
-│   └── temporal_simulation.py
-│
-├── graph/
-│   ├── graph_construction.py
-│   └── graph_features.py
-│
-├── explainability/
-│   ├── attribution.py
-│   └── heatmap_generation.py
-│
-├── visualisation/
-│   ├── plots.py
-│   ├── graph_visuals.py
-│   └── dashboard_utils.py
-│
-├── data/
-│   ├── sample_images/
-│   ├── masks/
-│   └── processed/
-│
-└── assets/
-    ├── architecture_diagram.png
-    ├── screenshots/
-    └── figures/
+└── utils/
+    ├── data_loader.py
+    ├── dataset_inspector.py
+    ├── helpers.py
+    └── visualisation.py
 ```
 
 ---
@@ -298,7 +292,7 @@ The framework bridges computer vision, graph learning, and biomedical informatic
 ### Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/WoundGraphAI.git
+git clone https://github.com/farts-n-roses/WoundGraphAI.git
 cd WoundGraphAI
 ```
 
@@ -383,7 +377,7 @@ The system generates:
 
 B.Tech Computer Science Engineering
 
-Biomedical AI • Graph Neural Networks • Computer Vision • Explainable AI • Computational Biology
+Computational Biology • Biomedical AI • Graph Neural Networks • Computer Vision • Explainable AI
 
 ---
 
