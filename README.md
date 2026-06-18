@@ -110,8 +110,7 @@ WoundGraphAI/
 │   ├── raw_images/
 │   │   ├── test_images/
 │   │   └── train_images/
-│   ├── simulated_sequences/
-│   └── metadata.csv
+│   └── simulated_sequences/
 │
 ├── pages/
 │   ├── 1_Overview.py
