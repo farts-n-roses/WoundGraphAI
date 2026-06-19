@@ -191,9 +191,6 @@ def build_graph(node_features):
     
     if num_nodes == 0:
         return G
-    
-    # node_features = []
-    # grid_size = int(np.sqrt(len(patches)))
 
     # =====================================================
     # ADD NODES
