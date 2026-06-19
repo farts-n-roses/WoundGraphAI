@@ -97,9 +97,9 @@ The framework follows a multi-stage pipeline:
 ```text
 WoundGraphAI/
 │
-├── app.py
-├── requirements.txt
 ├── README.md
+├── requirements.txt
+├── app.py
 ├── config.py
 │
 ├── dataset/
@@ -107,10 +107,10 @@ WoundGraphAI/
 │   │   ├── test_masks/
 │   │   └── train_masks/
 │   ├── precomputed/
-│   ├── raw_images/
+│   ├── images/
 │   │   ├── test_images/
 │   │   └── train_images/
-│   └── simulated_sequences/
+│   └── sample_simulated_sequence/
 │
 ├── pages/
 │   ├── 1_Overview.py
