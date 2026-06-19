@@ -17,7 +17,7 @@ BASE_DIR = Path(__file__).resolve().parent
 
 DATASET_DIR = BASE_DIR / "dataset"
 
-RAW_IMAGES_DIR = DATASET_DIR / "raw_images"
+RAW_IMAGES_DIR = DATASET_DIR / "images"
 
 MASKS_DIR = DATASET_DIR / "masks"
 
