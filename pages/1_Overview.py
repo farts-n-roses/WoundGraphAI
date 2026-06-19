@@ -123,9 +123,6 @@ st.markdown("---")
 
 st.info(
     """
-This system is a computational research prototype
-for modeling wound healing dynamics using AI.
-
-It is not intended for clinical diagnosis.
+This system is a computational research prototype for modeling wound healing dynamics using AI. It is not intended for clinical diagnosis.
 """
 )
