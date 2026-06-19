@@ -260,7 +260,7 @@ if __name__ == "__main__":
     # =====================================================
 
     image_path = (
-        "dataset/raw_images/train_images/fusc_0016.png"
+        "dataset/images/train_images/fusc_0016.png"
     )
 
     mask_path = (
