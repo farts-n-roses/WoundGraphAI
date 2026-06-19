@@ -1,7 +1,7 @@
 streamlit
 torch
 torch-geometric
-opencv-python-heedless
+opencv-python-headless
 numpy
 matplotlib
 networkx
