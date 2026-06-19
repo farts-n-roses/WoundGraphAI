@@ -19,7 +19,7 @@ from processing.metrics import compute_wound_percentage, compute_perimeter
 @st.cache_data
 def load_data():
     dataset = load_dataset(
-        "dataset/raw_images/train_images",
+        "dataset/images/train_images",
         "dataset/masks/train_masks"
     )
     train_data, test_data = train_test_split(dataset)
