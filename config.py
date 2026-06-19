@@ -21,30 +21,13 @@ RAW_IMAGES_DIR = DATASET_DIR / "images"
 
 MASKS_DIR = DATASET_DIR / "masks"
 
-SEQUENCES_DIR = DATASET_DIR / "simulated_sequences"
-
-METADATA_FILE = DATASET_DIR / "metadata.csv"
-
-PRECOMPUTED_DIR = DATASET_DIR / "precomputed"
+SEQUENCES_DIR = DATASET_DIR / "sample_simulated_sequence"
 
 # =========================================================
-# OUTPUT / SAVED FILES
+# ML MODELS FILES
 # =========================================================
-
-OUTPUT_DIR = BASE_DIR / "outputs"
 
 MODEL_DIR = BASE_DIR / "models"
-
-SAVED_MODELS_DIR = MODEL_DIR / "saved_models"
-
-CHECKPOINT_DIR = SAVED_MODELS_DIR / "checkpoints"
-
-BEST_SEGMENTATION_MODEL = SAVED_MODELS_DIR / "best_segmentation_model.pt"
-
-BEST_TEMPORAL_MODEL = SAVED_MODELS_DIR / "best_temporal_gnn.pt"
-
-# Create folders automatically if missing
-CHECKPOINT_DIR.mkdir(parents=True, exist_ok=True)
 
 # =========================================================
 # IMAGE SETTINGS
