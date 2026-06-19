@@ -83,6 +83,8 @@ if img_file and mask_file:
     image = resize_image(image, 256)
     
     mask = resize_image(mask, 256)
+    if len(mask.shape) == 3:
+        mask = cv2.cvtColor(mask, cv2.COLOR_BGR2GRAY)
     mask = binarize_mask(mask)
 
     image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
@@ -92,7 +94,8 @@ if img_file and mask_file:
     # =====================================================
 
     node_features, patches = extract_patch_features(image, mask)
-    importance_map = generate_importance_map(image, mask)
+    importance_map = generate_importance_map(mask)
+
     overlay = overlay_heatmap(image, importance_map)
 
     # =====================================================
