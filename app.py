@@ -226,53 +226,10 @@ st.info("""Use the sidebar to navigate through the
 different computational analysis modules.""")
 
 # =========================================================
-# SIDEBAR NAVIGATION
-# =========================================================
-
-# st.sidebar.title("🧬 Wound Healing AI System")
-
-page = st.sidebar.selectbox(
-    "Navigate",
-    [
-        "Overview",
-        "Segmentation",
-        "Temporal Analysis",
-        "Graph Analysis",
-        "Prediction",
-        "Explainable AI",
-        "Insights"
-    ]
-)
-
-# =========================================================
-# ROUTING
-# =========================================================
-
-if page == "Overview":
-    st.switch_page("pages/1_Overview.py")
-
-elif page == "Segmentation":
-    st.switch_page("pages/2_Segmentation.py")
-
-elif page == "Temporal Analysis":
-    st.switch_page("pages/3_Temporal_Analysis.py")
-
-elif page == "Graph Analysis":
-    st.switch_page("pages/4_Graph_Analysis.py")
-
-elif page == "Prediction":
-    st.switch_page("pages/5_Prediction.py")
-
-elif page == "Explainable AI":
-    st.switch_page("pages/6_Explainable_AI.py")
-
-elif page == "Insights":
-    st.switch_page("pages/7_Insights.py")
-
-# =========================================================
 # FOOTER
 # =========================================================
 
 st.markdown("---")
 
-st.caption("""Final Year Project — AI-Based Computational Wound Healing Analysis System""")
+st.caption("""Final Year Project — WoundGraphAI""")
+st.caption("""Developed by: Fida Fathima""")
