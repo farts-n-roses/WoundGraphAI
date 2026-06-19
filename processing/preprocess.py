@@ -93,7 +93,7 @@ def show_sample(img, mask):
 if __name__ == "__main__":
     from utils.dataset_inspector import get_image_files
 
-    img_path = "dataset/raw_images/train_images/fusc_0002.png"
+    img_path = "dataset/images/train_images/fusc_0002.png"
     mask_path = "dataset/masks/train_masks/fusc_0002.png"
 
     img = load_image(img_path)
@@ -117,7 +117,7 @@ if __name__ == "__main__":
     import cv2
 
     # pick sample files
-    img_path = "dataset/raw_images/train_images/fusc_0002.png"
+    img_path = "dataset/images/train_images/fusc_0002.png"
     mask_path = "dataset/masks/train_masks/fusc_0002.png"
 
     # load raw
