@@ -1,0 +1,9 @@
+streamlit
+torch
+torch-geometric
+opencv-python
+numpy
+matplotlib
+networkx
+Pillow
+pandas
