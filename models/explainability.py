@@ -43,7 +43,7 @@ def generate_importance_map(
     stronger importance values.
     """
 
-    height, width = mask.shape
+    height, width = mask.shape[:2]
 
     importance_map = np.zeros(
         (height, width),
@@ -107,6 +107,15 @@ def overlay_heatmap(
     """
     Overlays heatmap onto wound image.
     """
+
+    # heatmap = np.uint8(255 * importance_map)
+
+    # heatmap = cv2.applyColorMap(
+    #     heatmap,
+    #     cv2.COLORMAP_JET
+    # )
+
+    # image_uint8 = np.uint8(image)
     
     # Ensure image is uint8 rgb
     image = np.asarray(image, dtype=np.uint8)
@@ -149,6 +158,19 @@ def overlay_heatmap(
         heatmap,
         cv2.COLORMAP_JET
     )
+    
+    # convert grayscale → color
+    # if len(heatmap.shape) == 2:
+    #     heatmap = cv2.applyColorMap(
+    #         np.uint8(255 * heatmap),
+    #         cv2.COLORMAP_JET
+    #     )
+    
+    # Final Safety Check
+    # image = cv2.resize(
+    #     image,
+    #     (heatmap.shape[1], heatmap.shape[0])
+    # )
 
     # Final Blend
     overlay = cv2.addWeighted(
@@ -260,7 +282,7 @@ if __name__ == "__main__":
     # =====================================================
 
     image_path = (
-        "dataset/images/train_images/fusc_0016.png"
+        "dataset/raw_images/train_images/fusc_0016.png"
     )
 
     mask_path = (
@@ -286,12 +308,7 @@ if __name__ == "__main__":
     # GENERATE IMPORTANCE
     # =====================================================
 
-    importance_map = (
-        generate_importance_map(
-            image,
-            mask
-        )
-    )
+    importance_map = generate_importance_map(mask)
 
     # =====================================================
     # OVERLAY
