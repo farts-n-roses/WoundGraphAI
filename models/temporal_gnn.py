@@ -175,7 +175,7 @@ def create_graph_sequence():
     # =====================================================
 
     image_path = (
-        "dataset/raw_images/train_images/fusc_0016.png"
+        "dataset/images/train_images/fusc_0016.png"
     )
 
     mask_path = (
