@@ -432,7 +432,7 @@ def run_graph_builder_from_arrays(
 
 if __name__ == "__main__":
 
-    image_path = ("dataset/raw_images/train_images/fusc_0002.png")
+    image_path = ("dataset/images/train_images/fusc_0002.png")
 
     mask_path = ("dataset/masks/train_masks/fusc_0002.png")
 
