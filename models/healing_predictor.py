@@ -34,7 +34,7 @@ from config import DEVICE
 
 def classify_healing(score):
 
-    if score >= 0.80:
+    if score >= 0.70:
 
         return (
             "Healthy Healing",
@@ -66,10 +66,10 @@ def estimate_recovery_days(score):
     if score >= 0.90:
         return 7
 
-    elif score >= 0.80:
+    elif score >= 0.70:
         return 10
 
-    elif score >= 0.70:
+    elif score >= 0.60:
         return 14
 
     elif score >= 0.50:
