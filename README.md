@@ -291,7 +291,7 @@ The framework bridges computer vision, graph learning, and biomedical informatic
 ### Clone Repository
 
 ```bash
-git clone https://github.com/farts-n-roses/WoundGraphAI.git
+git clone https://github.com/fida-fathi-154/WoundGraphAI.git
 cd WoundGraphAI
 ```
 
