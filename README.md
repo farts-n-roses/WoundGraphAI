@@ -383,3 +383,6 @@ Computational Biology • Biomedical AI • Graph Neural Networks • Computer V
 ## Academic Context
 
 This project was developed as a Final Year Research Project exploring the application of Spatio-Temporal Graph Neural Networks and Explainable AI for epithelial wound healing analysis and prediction from biomedical images.
+
+
+## 🔗 Live App: https://woundgraphai-fidafathi154.streamlit.app/
