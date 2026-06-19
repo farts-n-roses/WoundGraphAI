@@ -10,8 +10,8 @@
 
 import os
 import cv2
-import numpy as np
 from pathlib import Path
+import random
 
 # =========================================================
 # BASIC LOADERS
@@ -47,7 +47,7 @@ def match_image_mask(image_dir, mask_dir):
     mask_dir = Path(mask_dir)
 
     image_files = sorted(os.listdir(image_dir))
-    mask_files = sorted(os.listdir(mask_dir))
+    # mask_files = sorted(os.listdir(mask_dir))
 
     pairs = []
 
@@ -96,8 +96,8 @@ def load_dataset(image_dir, mask_dir, limit=None):
 
 def train_test_split(dataset, train_ratio=0.8):
     """Splits dataset into train and test sets."""
-
-    np.random.Generator.shuffle(dataset)
+    
+    random.shuffle(dataset)
 
     split_idx = int(len(dataset) * train_ratio)
 
